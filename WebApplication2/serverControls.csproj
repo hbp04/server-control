@@ -1,0 +1,338 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3DE79C4D-4CC5-4142-8AC7-0B6AAF0C0CAC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication2</RootNamespace>
+    <AssemblyName>WebApplication2</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdData.xml" />
+    <Content Include="AdRotator.aspx" />
+    <Content Include="ButtonCommand.aspx" />
+    <Content Include="ButtonStudent.aspx" />
+    <Content Include="calendar.aspx" />
+    <Content Include="checkboxList.aspx" />
+    <Content Include="CheckBoxListControl.aspx" />
+    <Content Include="confirmation.aspx" />
+    <Content Include="CustomValidator.aspx" />
+    <Content Include="dropdownlist.aspx" />
+    <Content Include="dropDownList1.aspx" />
+    <Content Include="fileupload.aspx" />
+    <Content Include="fileUploadControl.aspx" />
+    <Content Include="images\bio.png" />
+    <Content Include="button.aspx" />
+    <Content Include="checkBox.aspx" />
+    <Content Include="checkBoxStudent.aspx" />
+    <Content Include="images\hand.png" />
+    <Content Include="hyperlink.aspx" />
+    <Content Include="hyperlinkStudent.aspx" />
+    <Content Include="listBox.aspx" />
+    <Content Include="listBoxControl.aspx" />
+    <Content Include="multiView.aspx" />
+    <Content Include="MultiViewControl.aspx" />
+    <Content Include="radiobutton.aspx" />
+    <Content Include="radioButtonStudent.aspx" />
+    <Content Include="textboxStudent.aspx" />
+    <Content Include="ValidationSummary.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="textbox.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdRotator.aspx.cs">
+      <DependentUpon>AdRotator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdRotator.aspx.designer.cs">
+      <DependentUpon>AdRotator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="button.aspx.cs">
+      <DependentUpon>button.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="button.aspx.designer.cs">
+      <DependentUpon>button.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ButtonCommand.aspx.cs">
+      <DependentUpon>ButtonCommand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ButtonCommand.aspx.designer.cs">
+      <DependentUpon>ButtonCommand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ButtonStudent.aspx.cs">
+      <DependentUpon>ButtonStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ButtonStudent.aspx.designer.cs">
+      <DependentUpon>ButtonStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="calendar.aspx.cs">
+      <DependentUpon>calendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="calendar.aspx.designer.cs">
+      <DependentUpon>calendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="checkBox.aspx.cs">
+      <DependentUpon>checkBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="checkBox.aspx.designer.cs">
+      <DependentUpon>checkBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="checkboxList.aspx.cs">
+      <DependentUpon>checkboxList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="checkboxList.aspx.designer.cs">
+      <DependentUpon>checkboxList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckBoxListControl.aspx.cs">
+      <DependentUpon>CheckBoxListControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckBoxListControl.aspx.designer.cs">
+      <DependentUpon>CheckBoxListControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="checkBoxStudent.aspx.cs">
+      <DependentUpon>checkBoxStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="checkBoxStudent.aspx.designer.cs">
+      <DependentUpon>checkBoxStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="confirmation.aspx.cs">
+      <DependentUpon>confirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="confirmation.aspx.designer.cs">
+      <DependentUpon>confirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomValidator.aspx.cs">
+      <DependentUpon>CustomValidator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomValidator.aspx.designer.cs">
+      <DependentUpon>CustomValidator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dropdownlist.aspx.cs">
+      <DependentUpon>dropdownlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dropdownlist.aspx.designer.cs">
+      <DependentUpon>dropdownlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dropDownList1.aspx.cs">
+      <DependentUpon>dropDownList1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dropDownList1.aspx.designer.cs">
+      <DependentUpon>dropDownList1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fileupload.aspx.cs">
+      <DependentUpon>fileupload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fileupload.aspx.designer.cs">
+      <DependentUpon>fileupload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fileUploadControl.aspx.cs">
+      <DependentUpon>fileUploadControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fileUploadControl.aspx.designer.cs">
+      <DependentUpon>fileUploadControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hyperlink.aspx.cs">
+      <DependentUpon>hyperlink.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hyperlink.aspx.designer.cs">
+      <DependentUpon>hyperlink.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hyperlinkStudent.aspx.cs">
+      <DependentUpon>hyperlinkStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="hyperlinkStudent.aspx.designer.cs">
+      <DependentUpon>hyperlinkStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="listBox.aspx.cs">
+      <DependentUpon>listBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="listBox.aspx.designer.cs">
+      <DependentUpon>listBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="listBoxControl.aspx.cs">
+      <DependentUpon>listBoxControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="listBoxControl.aspx.designer.cs">
+      <DependentUpon>listBoxControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="multiView.aspx.cs">
+      <DependentUpon>multiView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="multiView.aspx.designer.cs">
+      <DependentUpon>multiView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MultiViewControl.aspx.cs">
+      <DependentUpon>MultiViewControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MultiViewControl.aspx.designer.cs">
+      <DependentUpon>MultiViewControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="radiobutton.aspx.cs">
+      <DependentUpon>radiobutton.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="radiobutton.aspx.designer.cs">
+      <DependentUpon>radiobutton.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="radioButtonStudent.aspx.cs">
+      <DependentUpon>radioButtonStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="radioButtonStudent.aspx.designer.cs">
+      <DependentUpon>radioButtonStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="textbox.aspx.cs">
+      <DependentUpon>textbox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="textbox.aspx.designer.cs">
+      <DependentUpon>textbox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="textboxStudent.aspx.cs">
+      <DependentUpon>textboxStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="textboxStudent.aspx.designer.cs">
+      <DependentUpon>textboxStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ValidationSummary.aspx.cs">
+      <DependentUpon>ValidationSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ValidationSummary.aspx.designer.cs">
+      <DependentUpon>ValidationSummary.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="upload\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52921</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52921/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
